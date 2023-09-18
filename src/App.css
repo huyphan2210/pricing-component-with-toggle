@@ -1,0 +1,36 @@
+.header-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+    .header-group_header {
+        color: var(--grayish-blue);
+    }
+
+    .header-group_pricing {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-group_pricing span {
+        color: var(--light-grayish-blue);
+    }
+
+.pricing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .pricing {
+    display: grid;
+    grid-template-columns: auto;
+    place-items: center;
+    row-gap: 2rem;
+    margin-bottom: 2rem;
+  }
+}

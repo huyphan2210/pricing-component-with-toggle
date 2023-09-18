@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root {
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue: hsl(232, 13%, 33%);
+
+  --linear-gradient: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --pro-button: hsl(237, 63%, 64%);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: Montserrat;
+  font-weight: 700;
+  background-color: hsl(240, 78%, 98%);
+  background-image: url(./assets/images/bg-top.svg), url(./assets/images/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 0, 0 100%;
+}
+
+input, button {
+  font-family: Montserrat;
+  font-weight: 700;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+footer {
+  position: absolute;
+  bottom: 1vh;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+@media screen and (min-height: 768px) and (min-width: 1024px) {
+  main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -60%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    background-image: url(./assets/images/bg-top.svg);
+    background-position: calc(100% + 30vw) 0;
+  }
+
+  footer {
+    position: static;
+    transform: none;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    body {
+      background-position: calc(100% + 50vw) 0;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+.pricing-card {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  width: calc(90% - 4rem);
+  max-width: 18.5rem;
+  color: var(--grayish-blue);
+}
+
+  .pricing-card_header {
+
+  }
+
+    .pricing-card_header h2 {
+      text-align: center;
+      font-size: 1rem;
+      margin-block: 0;
+    }
+
+    .pricing-card_header_price {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-block: 2rem;
+      border-block-end: 0.1rem var(--light-grayish-blue) solid;
+      color: var(--dark-grayish-blue);
+    }
+
+    .pricing-card.pro .pricing-card_header_price {
+      color: var(--very-light-grayish-blue);
+    }
+
+      .pricing-card_header_price span {
+        font-size: 2rem;
+      }
+
+      .pricing-card_header_price span:last-child {
+        font-size: 4rem;
+      }
+
+  .pricing-card_benefits {
+    margin-bottom: 2rem;
+  }
+
+    .pricing-card_benefits-item {
+      padding-block: 1rem;
+      border-block-end: 0.1rem var(--light-grayish-blue) solid;
+      text-align: center;
+    }
+
+  .pricing-card button {
+    border: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: var(--very-light-grayish-blue);
+    background: var(--linear-gradient);
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+
+    .pricing-card button:hover {
+      background: transparent;
+      outline: var(--pro-button) solid 1px;
+      color: var(--pro-button)
+    }
+
+.pricing-card.pro {
+  background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: var(--very-light-grayish-blue);
+  padding-block: 3rem;
+}
+
+  .pricing-card.pro button:hover {
+    background: transparent;
+    outline: var(--very-light-grayish-blue) solid 1px;
+    color: var(--very-light-grayish-blue)
+  }
+
+  .pricing-card.pro button {
+    background: var(--very-light-grayish-blue);
+    color: var(--pro-button);
+  }
+
+@media screen  and (max-width: 1023px) {
+  .pricing-card {
+    width: calc(100% - 4rem);
+  }
+
+  .pricing-card.pro {
+    padding-block: 2rem;
+  }
+}
